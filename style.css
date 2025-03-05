@@ -133,7 +133,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('https://source.unsplash.com/1600x900/?travel,adventure') no-repeat center center/cover;
+    background: url(/Con2Images/MountainEscape.avif) no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,16 +162,20 @@ body {
     font-size: 45px;
     font-weight: bold;
     line-height: 1.2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a soft black shadow */
 }
 
 .header-content h1 span {
     color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ensures highlighted text is also readable */
 }
 
 .header-content p {
     font-size: 18px;
     margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Light shadow for readability */
 }
+
 
 .btn {
     display: inline-block;
@@ -262,7 +266,7 @@ body {
         /* DESTINATION CONTAINER */
         .destination-container {
             text-align: center;
-            padding: 15px 20px;
+            padding: 30px 20px;
                 }
 
         .destination-container h2 {
@@ -817,8 +821,8 @@ right: 20%;
 }
 
 .btn-custom {
-    background: #ffc107;
-    color: #222;
+    background: black;
+    color: white;
     font-weight: bold;
     border-radius: 25px;
     transition: 0.3s;
@@ -830,7 +834,7 @@ right: 20%;
 
 .btn-custom:hover {
     background: #e0a800;
-    color: #fff;
+    color: black;
 }
 
 /* Footer Bottom */
