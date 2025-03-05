@@ -9,6 +9,8 @@
 
 body {
     overflow-x: hidden;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #00162e);
+
 }
 
 /* NAVBAR */
@@ -16,7 +18,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background-color: #141e30;    
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
@@ -146,7 +148,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    
 }
 
 .header-content {
@@ -175,8 +177,8 @@ body {
     display: inline-block;
     padding: 12px 25px;
     font-size: 18px;
-    background: #ffcc00;
-    color: black;
+    color: white;
+    background-color: #00162e;
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px;
@@ -184,8 +186,8 @@ body {
 }
 
 .btn:hover {
-    background: #ffd633;
-    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8);
+    background: #ffcc00;
+    color: black;
 }
 
 /* MODALS */
@@ -261,18 +263,18 @@ body {
         .destination-container {
             text-align: center;
             padding: 60px 20px;
-            background: #f9f9f9;
-        }
+                }
 
         .destination-container h2 {
             font-size: 36px;
-            color: #222;
+            color: #ffcc00;
+            text-shadow: 0px 0px 15px rgba(255, 204, 0, 0.6);
             margin-bottom: 10px;
         }
 
         .destination-container p {
             font-size: 18px;
-            color: #555;
+            color: white;
             max-width: 600px;
             margin: 0 auto 30px;
         }
@@ -334,8 +336,8 @@ body {
             display: inline-block;
             margin: 15px 0;
             padding: 10px 20px;
-            background: #ffcc00;
-            color: black;
+            color:white;
+            background-color: black;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
@@ -343,8 +345,8 @@ body {
         }
 
         .btn-explore:hover {
-            background: #e6b800;
-            box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+            background: #ffcc00;
+            color: black;
         }
 
         /* RESPONSIVE DESIGN */
@@ -369,20 +371,20 @@ body {
 .packages-container {
 text-align: center;
 padding: 60px 20px;
-background: linear-gradient(to bottom, gray, rgb(31, 24, 24)); /* Gradient for premium look */
+/* background: linear-gradient(to bottom, gray, rgb(31, 24, 24)); Gradient for premium look */
 position: relative;
 }
 
 .section-title {
 font-size: 36px;
-color: white;
+color: #ffcc00;
+text-shadow: 0px 0px 15px rgba(255, 204, 0, 0.6);
 margin-bottom: 15px;
-text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .section-subtitle {
 font-size: 18px;
-color: #ffe1d0;
+color: white;
 max-width: 600px;
 margin: 0 auto 40px;
 }
@@ -446,8 +448,8 @@ margin-bottom: 12px;
 .btn-book {
 display: inline-block;
 padding: 10px 20px;
-background: #ff4f1f;
-color: white;
+color:white;
+background-color: black;
 text-decoration: none;
 font-weight: bold;
 border-radius: 50px;
@@ -457,8 +459,8 @@ z-index: 2;
 }
 
 .btn-book:hover {
-background: #d94015;
-box-shadow: 0px 0px 10px rgba(255, 79, 31, 0.8);
+background: #ffcc00;
+color: black;
 }
 
 /* BACKGROUND ELEMENTS */
@@ -487,7 +489,7 @@ right: 20%;
 /* GALLERY SECTION */
 .gallery-container {
     padding: 40px 20px;
-    background: linear-gradient(to bottom, rgb(31, 24, 24),gray); /* Gradient for premium look */
+    /* background: linear-gradient(to bottom, rgb(31, 24, 24),gray); Gradient for premium look */
     text-align: center;
     color: white;
 }
@@ -496,13 +498,15 @@ right: 20%;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #ffcc00;
+    text-shadow: 0px 0px 15px rgba(255, 204, 0, 0.6);
 }
 
 .gallery-subtitle {
     font-size: 18px;
     max-width: 600px;
     margin: 0 auto 30px;
-    opacity: 0.8;
+    color:white;
 }
 
 /* GRID LAYOUT */
@@ -589,7 +593,7 @@ right: 20%;
 .travel-container {
     position: relative;
     padding: 80px 20px;
-    background: linear-gradient(to bottom, #111, #222); /* Dark premium gradient */
+    /* background: linear-gradient(to bottom, #111, #222); Dark premium gradient */
     color: white;
     text-align: center;
     overflow: hidden;
@@ -623,8 +627,7 @@ right: 20%;
     font-size: 20px;
     max-width: 600px;
     margin: 10px auto 40px;
-    color: #ddd;
-    opacity: 0.8;
+    color: white;
 }
 
 /* TRAVEL BLOG GRID */
@@ -678,7 +681,7 @@ right: 20%;
     font-size: 22px;
     color: #ffcc00;
     margin-bottom: 8px;
-    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.6);
+    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.3);
 }
 
 /* Blog Description */
@@ -693,8 +696,8 @@ right: 20%;
     display: inline-block;
     margin-top: 10px;
     padding: 8px 16px;
-    background: #ffcc00;
-    color: black;
+    color:white;
+    background-color: black;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -703,8 +706,8 @@ right: 20%;
 
 /* Button Hover Effect */
 .travel-btn:hover {
-    background: #e6b800;
-    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8);
+    background: #ffcc00;
+    color: black;
 }
 
 /* RESPONSIVE DESIGN */
@@ -732,7 +735,6 @@ right: 20%;
 
 /* Footer Styling */
 .footer {
-    background: linear-gradient(to right, #141e30, #243b55);
     color: #f1f1f1;
     padding: 60px 20px;
 }
