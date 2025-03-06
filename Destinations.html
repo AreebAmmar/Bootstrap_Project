@@ -5,8 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .destination-container h2{
+            padding-top: 100px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- NAVIGATION BAR -->
+<div class="NavigationBar">
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/logo.webp" alt="WanderVistas Logo">
+            <div class="logo-text">WanderVistas</div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="HotDeals.html">Hot Deals</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="#login" class="btn-auth btn-login">Login</a></li>
+            <li><a href="#signup" class="btn-auth btn-signup">Sign Up</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- LOGIN MODAL -->
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button class="btn-submit">Login</button>
+        </div>
+    </div>
+
+    <!-- SIGNUP MODAL -->
+    <div id="signup" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-btn">&times;</a>
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button class="btn-submit">Sign Up</button>
+        </div>
+    </div>
+</div>
         <!-- Container1 -->
         <section class="destination-container">
             <h2>Discover Breathtaking Destinations</h2>
@@ -80,5 +132,64 @@
             </div>
         </section>
     
+        <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        
+            <!-- About Section -->
+            <div class="footer-column">
+                <h4>About WanderVistas</h4>
+                <p>Your ultimate travel companion! Here We provide the best travel deals, with expert tips and fruitful destinations to make all your journeys unforgettable. Wanna explore We Accompany You.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#">Destinations</a>
+                <a href="#">Travel Blog</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <!-- Explore -->
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="#">Adventure Trips</a>
+                <a href="#">Luxury Travel</a>
+                <a href="#">Budget Travel</a>
+                <a href="#">Family Packages</a>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Us Form -->
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="2" required></textarea>
+                    <button type="submit" class="btn-custom">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 WanderVistas. All Rights Reserved.</p>
+        </div>
+    </footer>    
+
+
 </body>
 </html>
