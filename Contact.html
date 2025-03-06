@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Stunning UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #00162e);
+            color: white;
+        }
+
+        .contact-container {
+            width: 90%;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .contact-container h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-container p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input, .input-box textarea {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            color: white;
+            transition: 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
+
+        .input-box input:focus,
+        .input-box textarea:focus {
+            border-color: #ff4b2b;
+            box-shadow: 0px 0px 10px rgba(255, 75, 43, 0.7);
+        }
+
+        .input-box textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            pointer-events: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        .input-box input:focus + label,
+        .input-box textarea:focus + label,
+        .input-box input:not(:placeholder-shown) + label,
+        .input-box textarea:not(:placeholder-shown) + label {
+            top: 5px;
+            font-size: 12px;
+            color: #ff4b2b;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            transition: 0.3s ease-in-out;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0px 5px 15px rgba(255, 75, 43, 0.5);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 8px 20px rgba(255, 75, 43, 0.8);
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Lets travel the unseen!</h2>
+        <p>Have a question or want to work together? Drop us a message.</p>
+        <form>
+            <div class="input-box">
+                <input type="text" id="name" placeholder=" " required>
+                <label for="name">Full Name</label>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+                <input type="text" id="subject" placeholder=" " required>
+                <label for="subject">Subject</label>
+            </div>
+            <div class="input-box">
+                <textarea id="message" placeholder=" " required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
